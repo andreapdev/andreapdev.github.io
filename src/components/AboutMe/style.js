@@ -13,10 +13,14 @@ const StyledAbout=styled.div`
         }
     }
     @media only screen and (max-width: 767px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img{
             border-radius: 50%;
             height: 6rem;
-            box-shadow: 0.2rem 0rem ${Colors.secondaryColor};
+            width: 6rem;
+            box-shadow: 0.4rem 0.4rem ${Colors.secondaryColor};
             margin-right: 1rem;
         }
     }

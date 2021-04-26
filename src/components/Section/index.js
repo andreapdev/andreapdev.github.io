@@ -1,13 +1,13 @@
 import React from 'react';
-import {StyledSection, StyledContent} from './style';
+import StyledSection from './style';
 
 const Section = ({id, title, children}) => {
     return (
         <StyledSection id={id}>
             <h3>{title}</h3>
-            <StyledContent>
+            <div className='section-content'>
                 {children}
-            </StyledContent>
+            </div>
         </StyledSection>
     );
 }

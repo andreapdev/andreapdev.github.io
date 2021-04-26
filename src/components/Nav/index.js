@@ -22,8 +22,8 @@ const Nav = () => {
                 <div id='navbar-open' onClick={toggleNav} className={isNavOpen? 'nav hideThis' : 'nav'}>
                     {barsIcon}
                 </div>
-                <div className={isNavOpen? 'nav' : 'nav hideThis'}>
-                    <div id='navbar-close' onClick={toggleNav}>{closeIcon}</div>
+                <div className={isNavOpen? 'nav' : 'nav hideThis'} onClick={toggleNav}>
+                    <div id='navbar-close' >{closeIcon}</div>
                     <a href='#aboutme'>About Me</a>
                     <a href='#contact'>Contact</a>
                     <a href='#skills'>Skills</a>

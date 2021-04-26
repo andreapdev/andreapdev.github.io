@@ -7,11 +7,17 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3{
-        width: 80%;
+
+    @media only screen and (min-width: 768px) {
+        .section-content, h3{
+            width: 80%;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .section-content, h3{
+            width: 100%;
+        }
     }
 `;
 
-export const StyledContent = styled.div`
-    width: 80%;
-`;
+export default StyledSection;

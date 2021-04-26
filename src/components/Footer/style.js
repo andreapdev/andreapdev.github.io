@@ -6,6 +6,9 @@ const StyledFooter = styled.footer`
     width: 90%;
     display: flex;
     justify-content: space-around;
+    @media only screen and (max-width: 767px) {
+        margin-top: 5rem;
+    }
 `;
 
 export default StyledFooter;

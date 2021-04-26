@@ -7,9 +7,7 @@ export const StyledArticle=styled.article`
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        font-size: 1.1rem;
-        font-weight: bolder;
-        color: ${Colors.lightColor};
+
     }
     .skills-other{
         display: flex;
@@ -23,13 +21,14 @@ export const StyledArticle=styled.article`
 `;
 
 export const StyledCard= styled.div`
-    height: 4rem;
-    width: 13rem;
+
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: ${Colors.lightColor};
     border: solid 2px ${Colors.secondaryColor};
     border-radius: 2rem;
     z-index: -6;
@@ -43,6 +42,19 @@ export const StyledCard= styled.div`
         left: 0;
         height: 100%;
         width: ${props => props.value};
+    }
+    @media only screen and (min-width: 600px) {
+        width: 13rem;
+        height: 4rem;
+        font-size: 1.1rem;
+        margin: 1rem;
+    }
+    @media only screen and (max-width: 599px) {
+        width: 100%;
+        max-width: 350px;
+        height: 2.2rem;
+        font-size: 1rem;
+        margin: 0.2rem;
     }
 
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Colors from '../../theme/Colors'
 
 const StyledSection = styled.div`
-    padding-left: 5rem;
+    
     position: relative;
     
     &::before{
@@ -26,7 +26,7 @@ const StyledSection = styled.div`
         &::before{
             content: '';
             position: relative;
-            left: -4rem;
+
             top: 2rem;
             border: 0.2rem solid inherit;
             border-radius: 100%;
@@ -42,6 +42,19 @@ const StyledSection = styled.div`
     }
     .what{
         color: ${Colors.primaryColor};
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding-left: 5rem;
+        .course::before{
+            left: -4rem;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding-left: 2rem;
+        .course::before{
+            left: -1rem;
+        }
     }
 `;
 

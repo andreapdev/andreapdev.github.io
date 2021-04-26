@@ -3,6 +3,7 @@ import Colors from '../../theme/Colors';
 
 const StyledNav = styled.div`
     background-color: ${Colors.secondaryColor};
+    width: 80%;
     padding: 0.5rem;
     border-style: solid inherit;
     border-radius: 2rem;
@@ -28,7 +29,7 @@ const StyledNav = styled.div`
     }
 
     @media only screen and (min-width: 768px) {
-        width: 80%;
+        
         .nav{
             font-size: 1.2rem;
         }
@@ -43,7 +44,6 @@ const StyledNav = styled.div`
         }
     }
     @media only screen and (max-width: 767px) {
-        width: 100%;
         .nav{
             flex-direction: column;
         }
