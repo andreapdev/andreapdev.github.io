@@ -4,11 +4,11 @@ import Colors from '../../theme/Colors';
 const StyledSection = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
     article{
-        margin: 0.5rem;
+        margin: 1.5rem 0.5rem;
         padding: 0.5rem;
         border: solid 0.2rem ${Colors.warningColor};
         box-shadow: 0.5rem 0.5rem 0 ${Colors.warningColor};
